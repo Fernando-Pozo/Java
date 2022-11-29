@@ -1,17 +1,21 @@
 package entities;
 
-import java.time.Instant;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Client {
 	
+	public static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+	
 	private String name;
 	private String email;
-	private Instant birthDate;
+	private LocalDate  birthDate;
 	
 	public Client() {
 	}
 	
-	public Client(String name, String email, Instant birthDate) {
+	public Client(String name, String email, LocalDate  birthDate) {
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;
@@ -33,13 +37,17 @@ public class Client {
 		this.email = email;
 	}
 
-	public Instant getBirthDate() {
+	public LocalDate  getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(Instant birthDate) {
+	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
 	}
 	
+	@Override
+	public String toString() {
+		return name + " (" + fmt.format(birthDate) + ") - " + email;
+	}
 	
 }
