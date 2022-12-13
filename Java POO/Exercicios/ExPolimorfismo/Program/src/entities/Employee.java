@@ -3,8 +3,8 @@ package entities;
 public class Employee {
 	
 	private String name;
-	private Integer hours;
-	private Double valuePerHour;
+	protected Integer hours;
+	protected Double valuePerHour;
 	
 	public Employee() {}
 
@@ -38,7 +38,7 @@ public class Employee {
 		this.valuePerHour = valuePerHour;
 	}
 	
-	public Double payment(Integer hours, Double valuePerHour) {
+	public Double payment() {
 		return valuePerHour * hours;
 	}
 }

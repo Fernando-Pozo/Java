@@ -20,7 +20,7 @@ public class OutsourcedEmployee extends Employee {
 	}
 	
 	@Override
-	public Double payment(Integer hours, Double valuePerHour) {
-		return (valuePerHour * hours) + (additionalChange + ((additionalChange/100) * 10)); 
+	public Double payment() {
+		return super.payment() + (additionalChange + ((additionalChange/100) * 10)); 
 	}
 }

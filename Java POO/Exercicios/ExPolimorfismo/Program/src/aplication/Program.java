@@ -1,6 +1,7 @@
 package aplication;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,7 +13,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		ArrayList<Employee> emp = new ArrayList<>();
+		List<Employee> list = new ArrayList<>();
 		
 		System.out.println("Enter the number of employees:" );
 		int NumberEmployees = sc.nextInt();
@@ -20,9 +21,10 @@ public class Program {
 		for(int i = 0; i < NumberEmployees; i++) {
 			System.out.println("Employee #" + (i+1) + "data:" );
 			System.out.println("Outsourced (y/n)?");
-			char resp = sc.nextLine().charAt(0);
+			char resp = sc.next().charAt(0);
 			if(resp == 'y' || resp == 'Y') {
 				System.out.println("Name: ");
+				sc.nextLine();
 				String name = sc.nextLine();
 				System.out.println("Hours: ");
 				Integer Hours = sc.nextInt();
@@ -31,23 +33,25 @@ public class Program {
 				System.out.println("Additional charge: ");
 				Double Additional = sc.nextDouble();
 				
-				Employee employee = new OutsourcedEmployee(name, Hours, valuePerHour, Additional);
-				emp.add(employee);
+				list.add(new OutsourcedEmployee(name, Hours, valuePerHour, Additional));
 				
 			}else {
 				System.out.println("Name: ");
+				sc.nextLine();
 				String name = sc.nextLine();
 				System.out.println("Hours: ");
 				Integer Hours = sc.nextInt();
 				System.out.println("Value per hour: ");
 				Double valuePerHour = sc.nextDouble();
 			
-				Employee employee = new Employee(name, Hours, valuePerHour);
-				emp.add(employee);
+				list.add(new Employee(name, Hours, valuePerHour));
 			}
 		}
 		
-		
+		System.out.println("PAYMENTS:");
+		for(Employee emp : list) {
+			System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
+		}
 		
 		sc.close();
 	}
