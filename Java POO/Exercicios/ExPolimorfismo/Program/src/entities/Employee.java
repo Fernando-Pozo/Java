@@ -38,4 +38,7 @@ public class Employee {
 		this.valuePerHour = valuePerHour;
 	}
 	
+	public Double payment(Integer hours, Double valuePerHour) {
+		return valuePerHour * hours;
+	}
 }

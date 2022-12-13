@@ -19,5 +19,8 @@ public class OutsourcedEmployee extends Employee {
 		this.additionalChange = additionalChange;
 	}
 	
-	
+	@Override
+	public Double payment(Integer hours, Double valuePerHour) {
+		return (valuePerHour * hours) + (additionalChange + ((additionalChange/100) * 10)); 
+	}
 }
