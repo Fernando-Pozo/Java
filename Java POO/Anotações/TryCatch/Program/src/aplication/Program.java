@@ -16,9 +16,12 @@ public class Program {
 			System.out.println("Posição invalida");
 		} catch (InputMismatchException e) {
 			System.out.println("input errado");
+		} finally {
+			if (sc != null) {
+				sc.close();
+			}
 		}
 		
 		
-		sc.close();
 	}
 }
