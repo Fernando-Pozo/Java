@@ -50,11 +50,11 @@ public class Reservation {
 	
 	@Override
 	public String toString() {
-		return "Room" 
+		return "Room " 
 			+ roomNumber 
-			+ ", check-in"
+			+ ", check-in "
 			+ fmt.format(checkin)
-			+ ", check-out"
+			+ ", check-out "
 			+ fmt.format(checkOut)
 			+ ", "
 			+ duration()
