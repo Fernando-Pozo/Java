@@ -16,5 +16,5 @@ Neste repositorio voce ira encontrar anotações que fiz durante as aulas, lista
 ## Tecnologias
 - [Java](https://www.java.com/pt-BR/download/manual.jsp)
 
-## Autores
+## Autor
 Made with by [Fernando Marques](https://www.linkedin.com/in/fernando-pozo-marques-junior/)
