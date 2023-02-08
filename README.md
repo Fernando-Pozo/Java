@@ -4,7 +4,8 @@
 <p align = "center">
 <a align href = "#Sobre">Sobre</a> │
 <a align href = "#Tecnologias">Tecnologias</a> │
-<a align href = "#Autores">Autores</a>
+<a align href = "#Projetos">Projetos</a> │
+<a align href = "#Autor">Autores</a>
 </p>
 
 ---
@@ -15,6 +16,12 @@ Neste repositorio voce ira encontrar anotações que fiz durante as aulas, lista
  
 ## Tecnologias
 - [Java](https://www.java.com/pt-BR/download/manual.jsp)
+
+
+## Projetos
+[**Jogo de Xadrez**](https://github.com/Fernando-Pozo/Java/tree/main/chess-system-java)
+
+
 
 ## Autor
 Made with by [Fernando Marques](https://www.linkedin.com/in/fernando-pozo-marques-junior/)
