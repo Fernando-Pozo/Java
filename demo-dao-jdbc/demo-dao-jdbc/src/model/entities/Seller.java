@@ -76,6 +76,10 @@ public class Seller implements Serializable {
 		this.department = department;
 	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
