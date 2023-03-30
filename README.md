@@ -4,8 +4,7 @@
 <p align = "center">
 <a align href = "#Sobre">Sobre</a> │
 <a align href = "#Tecnologias">Tecnologias</a> │
-<a align href = "#Projetos">Projetos</a> │
-<a align href = "#Autor">Autores</a>
+<a align href = "#Autor">Autor</a>
 </p>
 
 ---
@@ -15,13 +14,10 @@ Repositorio dedicado ao curso [Java COMPLETO Programação Orientada a Objetos +
 Neste repositorio voce ira encontrar anotações que fiz durante as aulas, listas de exercicios propostos ao longo do curso e claro os projetos que foram desenvolvidos.
  
 ## Tecnologias
-- [Java](https://www.java.com/pt-BR/download/manual.jsp)
-
-
-## Projetos
-[**Jogo de Xadrez**](https://github.com/Fernando-Pozo/Java/tree/main/chess-system-java)
+- [Java](https://www.java.com/pt-BR/download/manual.jsp) 
  
-<img src="https://i.imgur.com/PXFxCFW.png" alt="Jogo de xadrez no terminal" width ="150"/>
-
 ## Autor
 Made with by [Fernando Marques](https://www.linkedin.com/in/fernando-pozo-marques-junior/)
+
+[Certificado](https://www.udemy.com/certificate/UC-12b27688-7343-4c63-8027-a9250a54b3c7/)
+
